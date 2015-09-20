@@ -3,11 +3,21 @@
 
 #include "gavlib.h"
 
-#define ERR_INPUT_TRIES 3
-#define INTEGER_TYPE long long
-#define INTEGER_SCANF_TYPE "%lld"
-#define FLOAT_TYPE double
-#define FLOAT_SCANF_TYPE "%lg"
+#ifndef ERR_INPUT_TRIES
+    #define ERR_INPUT_TRIES 3
+#endif // ERR_INPUT_TRIES
+#ifndef INTEGER_TYPE
+    #define INTEGER_TYPE long long
+#endif // INTEGER_TYPE
+#ifndef INTEGER_SCANF_TYPE
+    #define INTEGER_SCANF_TYPE "%lld"
+#endif // INTEGER_SCANF_TYPE
+#ifndef FLOAT_TYPE
+    #define FLOAT_TYPE double
+#endif // FLOAT_TYPE
+#ifndef FLOAT_SCANF_TYPE
+    #define FLOAT_SCANF_TYPE "%lg"
+#endif // FLOAT_SCANF_TYPE
 
 int input_float(const char name[], FLOAT_TYPE* value);
 int input_float_once(const char name[], FLOAT_TYPE* value, int ask_entering);

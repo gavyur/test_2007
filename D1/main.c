@@ -1,4 +1,8 @@
 #include <stdio.h>
+
+#define INTEGER_TYPE int
+#define INTEGER_SCANF_TYPE "%d"
+
 #include "../libs/inputlib.h"
 #include "../libs/gavlib.h"
 
@@ -10,7 +14,7 @@ int main()
 {
     GREET("D1 problem", "1");
 
-    long long number = 0;
+    int number = 0;
     if (!input_integer("number N", &number))
         return 0;
 
